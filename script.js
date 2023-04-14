@@ -10,8 +10,8 @@
 // const btn = document.querySelector("button");
 // const cost = document.querySelector("#demo");
 // const slider = document.querySelector(".slider-bar");
-// const pageViews = ["10K", "20K", "40K", "50K", "100K", "300K", "500K", "1M"];
-// const perMonth = [8, 12, 16, 20, 24, 28, 32, 36];
+// const pageViews = ["10K","50K", "100K", "500K", "1M"];
+// const perMonth = [8, 12, 16, 24, 36];
 // let isYearly = false;
 
 // slider.addEventListener("input", () => {
