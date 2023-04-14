@@ -21,10 +21,9 @@
 
 body {
   background-image: url(./images/bg-pattern.svg);
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-color: var(--BcgWhite);
   width: 100vw;
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,8 +58,14 @@ h6 {
   align-items: center;
   box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
   border-radius: 8px;
-  padding: 32px 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin-bottom: 88px;
+}
+#pageViewSpan {
+  font-weight: 800;
+  font-size: 12px;
+  color: #848ead;
 }
 
 .slidecontainer {
@@ -84,7 +89,7 @@ h6 {
 
 .slider-bar {
   -webkit-appearance: none;
-  width: 100%;
+  width: 279px;
   height: 8px;
   border-radius: 5px;
   background: #ecf0fb;
@@ -122,6 +127,7 @@ h6 {
   display: flex;
   gap: 12px;
   align-items: center;
+  justify-content: center;
   margin-bottom: 38px;
 }
 .toggler span {
@@ -132,7 +138,7 @@ h6 {
 .orangeDiv {
   width: 41px;
   height: 19px;
-  background-color: #feede8;
+  background-color: #ecf0fb;
   border-radius: 9.5px;
   color: #ff8d68;
   text-align: center;
@@ -140,8 +146,9 @@ h6 {
   font-weight: 800;
 }
 hr {
-  background-color: #ecf0fb;
+  background-color: #cfd8ef;
   margin-bottom: 24px;
+  width: 327px;
 }
 
 .checkList {
@@ -219,3 +226,37 @@ input:checked + .slider:before {
 /* slider ends here */
 
 /* resposive design */
+
+@media screen and (min-width: 780px) {
+  .card {
+    width: 37.5%;
+    padding-top: 40px;
+  }
+  .lower {
+    display: flex;
+    flex-direction: row;
+    gap: 133px;
+    align-items: center;
+  }
+  .checkList {
+    margin: 0;
+    align-items: start;
+  }
+  hr {
+    width: 100%;
+  }
+  .slider-bar {
+    width: 444px;
+  }
+  #pageViewSpan {
+    position: relative;
+    right: 160px;
+    font-size: 14px;
+  }
+  .price {
+    margin: 0px;
+    position: relative;
+    top: -100px;
+    left: 100px;
+  }
+}
